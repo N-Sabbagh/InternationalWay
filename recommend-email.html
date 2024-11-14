@@ -24,11 +24,11 @@
                 emailjs.sendForm('service_h2t04mh', 'template_z04a0yp', this)
                     .then(() => {
                         console.log('SUCCESS!');
-                        document.getElemnetById('contact-form').reset();
+                        document.getElementById('contact-form').reset();
                         alert ('Email sent successfully');
                     }, (error) => {
                         console.log('FAILED...', error);
-                     //   document.getElemnetById('contact-form').reset();
+                        document.getElementById('contact-form').reset();
                         alert ('Failed - Email was not sent');
                     });
             });
